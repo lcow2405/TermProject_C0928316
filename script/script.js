@@ -11,12 +11,12 @@ document.addEventListener('DOMContentLoaded', function() {
 
     function updateCartCount() {
         if (cartCount) {
-            cartCount.textContent = cart.length;
+            cartCount.textContent = cart.reduce((acc, item) => acc + item.quantity, 0);
         }
     }
 
     function calculateSubtotal() {
-        const subtotal = cart.reduce((acc, item) => acc + item.price, 0);
+        const subtotal = cart.reduce((acc, item) => acc + item.price * item.quantity, 0);
         return subtotal.toFixed(2);
     }
 
@@ -51,8 +51,9 @@ document.addEventListener('DOMContentLoaded', function() {
             const cartItem = document.createElement('div');
             cartItem.className = 'cart-item';
             cartItem.innerHTML = `
-                <div class="item-title">${item.name}</div>
-                <div class="item-price">$${item.price.toFixed(2)}</div>
+                <img class="item-image" src="${item.image}">
+                <div class="item-title">${item.name} <b>x ${item.quantity}</b></div>
+                <div class="item-price">$${(item.price * item.quantity).toFixed(2)}</div>
                 <button class="remove-item" data-index="${index}">Remove</button>
             `;
             cartItems.appendChild(cartItem);
@@ -68,7 +69,12 @@ document.addEventListener('DOMContentLoaded', function() {
     function addToCart(productId) {
         const product = products.find(p => p.id === parseInt(productId));
         if (product) {
-            cart.push(product);
+            const cartItem = cart.find(item => item.id === product.id);
+            if (cartItem) {
+                cartItem.quantity += 1;
+            } else {
+                cart.push({ ...product, quantity: 1 });
+            }
             localStorage.setItem('cart', JSON.stringify(cart));
             updateCartCount();
             renderCart();
@@ -76,7 +82,11 @@ document.addEventListener('DOMContentLoaded', function() {
     }
 
     function removeFromCart(index) {
-        cart.splice(index, 1);
+        if (cart[index].quantity > 1) {
+            cart[index].quantity -= 1;
+        } else {
+            cart.splice(index, 1);
+        }
         localStorage.setItem('cart', JSON.stringify(cart));
         updateCartCount();
         renderCart();

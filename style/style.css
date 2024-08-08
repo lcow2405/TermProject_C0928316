@@ -662,7 +662,10 @@ print {
   font-weight: bold;
 }
 
-
+.item-image{
+  /* height:50px; */
+  width:50px;
+}
 #cart-summary {
   margin-top: 20px;
   font-weight: bold;
