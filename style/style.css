@@ -1,0 +1,669 @@
+.centerText {
+  text-align: center;
+}
+
+#banner {
+  width: 100%;
+  height: auto;
+}
+
+
+input[type=text],
+select,
+textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
+}
+
+input[type=submit] {
+  background-color: #725122;
+  color: #FFFDFA;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+input[type=submit]:hover {
+  background-color: #725122;
+}
+
+
+.centerText {
+  text-align: center;
+}
+
+#container {
+  text-align: center;
+}
+
+body,
+header,
+nav,
+main,
+footer,
+h1,
+div,
+img,
+ul,
+figure,
+figcaption,
+section,
+article,
+aside {
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+
+/* Style rule for images */
+img {
+  max-width: 100%;
+  display: block;
+}
+
+/* Style rules for header content */
+header {
+  height: 3% !important;
+  ;
+  text-align: center;
+  color: #725122;
+  background: #FFFDFA;
+  position: sticky;
+  /* Make header stick to the top */
+  top: 0;
+  /* Position at the top of the viewport */
+  padding: 1em;
+  /* Padding inside the header */
+  z-index: 1000;
+  /* Ensure header stays above other content */
+  width: 100%;
+  /* Full width of the viewport */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  /* Optional shadow for visibility */
+  display: flex;
+  /* Enable flexbox layout */
+  align-items: center;
+  /* Center items vertically */
+  justify-content: space-between;
+  /* Space between logo and navigation */
+  overflow: hidden;
+}
+
+header #logo {
+  max-width: 100px;
+  /* Set max width for logo image */
+}
+
+header h1 {
+  font-style: italic;
+}
+
+header h2 {
+  font-style: italic;
+  margin-right: 20%;
+}
+
+
+/* Style rules for navigation area */
+nav {
+  flex-grow: 1;
+  background-color: #725122;
+  /* Allow navigation to take up remaining space */
+}
+
+nav ul {
+  list-style: none;
+  /* Remove default list styling */
+  padding: 0;
+  /* Remove default padding */
+  margin: 0;
+  /* Remove default margin */
+  display: flex;
+  /* Use flexbox for horizontal alignment */
+  justify-content: center;
+  /* Center navigation items */
+}
+
+nav ul li {
+  margin: 0 15px;
+  /* Space between navigation items */
+}
+
+nav li {
+  display: inline-block;
+  font-size: 1.3em;
+}
+
+nav ul li a {
+  color: #fff;
+  /* Text color */
+  text-decoration: none;
+  /* Remove underline */
+  font-size: 1.1em;
+  /* Increase font size */
+}
+
+/* Style rules for navigation area */
+
+
+
+nav li {
+  display: block;
+  font-size: 2em;
+  border-top: 1px solid #e5e9fc;
+}
+
+nav li a {
+  display: block;
+  color: #fff;
+  text-align: center;
+  padding: 0.5em 1em;
+  text-decoration: none;
+}
+
+/* Table Style*/
+
+
+/*Style Rules foe Tables*/
+table {
+  border-collapse: collapse;
+  border: 4px solid #725122;
+  justify-content: center;
+  display: block;
+  padding: 2%;
+  position: relative;
+  overflow: auto;
+}
+
+caption {
+  font-size: 1.7em;
+  font-weight: bold;
+  padding: 1%;
+  color: #725122;
+}
+
+th,
+td {
+  border-collapse: collapse;
+  padding: 15px;
+  border: 2px solid #725122;
+  text-align: center;
+}
+
+th {
+  background-color: #725122;
+  color: #fff;
+  width: 22%;
+}
+
+tr:nth-child(even) {
+  background-color: #ecba74;
+}
+
+tr:hover {
+  background-color: #a8834e;
+  color: #FFFDFA;
+  border: 2px solid #FFFDFA;
+}
+
+
+/* Style rules for main content */
+main {
+  /* display: flex; */
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: #FFFDFA;
+  font-size: 1.25em;
+  overflow: auto;
+  font-family: Verdana, Arial, sans-serif;
+}
+
+
+main p {
+  font-size: 1em;
+  text-align: center;
+}
+
+section {
+  /* padding: 20px; */
+  margin: 50px;
+  box-shadow: 8px 8px 8px #725122;
+  border-radius: 10px;
+  border: 2px solid #725122;
+}
+
+#faqs {
+  box-shadow: 4px 4px 4px #af782a;
+  border-radius: 40px;
+  border: 2px solid #725122;
+  font-size: 0.9em;
+
+  p {
+    text-align: left;
+    padding: 10px;
+  }
+}
+
+aside {
+  text-align: center;
+  font-size: 1.5em;
+  font-weight: bold;
+  color: #725122;
+  text-shadow: 3px 3px 10px #725122;
+}
+
+figure {
+  position: relative;
+  /* max-width: 275px; */
+  margin: 2% auto;
+  border: 8px solid #725122;
+}
+
+figcaption {
+  /* position: absolute; */
+  /* bottom: 0; */
+  background: #725122;
+  color: #fff;
+  width: 100%;
+  padding: 5% 0;
+  text-align: center;
+  font-family: Verdana, Arial, sans-serif;
+  font-size: 1.5em;
+  font-weight: bold;
+}
+
+
+article {
+  padding: 2%;
+}
+
+article h3 {
+  text-align: center;
+}
+
+article img {
+  margin: 0 auto;
+}
+
+article:nth-of-type(2) {
+  background-color: rgba(204, 204, 204, 0.3);
+}
+
+article ul {
+  margin-left: 10%;
+}
+
+
+
+.action {
+  font-size: 1.75em;
+  color: #725122;
+  font-weight: bold;
+}
+
+#info {
+  clear: left;
+  background-color: #FFFDFA;
+  padding: 1% 2%;
+}
+
+#contact {
+  text-align: center;
+}
+
+#contact a {
+  color: #FFFDFA;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+
+#cont_img,
+#cont_form {
+  width: 40%;
+  float: left;
+  padding: 1%;
+  border: none;
+  box-shadow: none;
+}
+
+.map {
+  border: 5px solid #FFFDFA;
+}
+
+/* Style rules for footer content */
+footer {
+  text-align: center;
+  font-size: 1.1em;
+  background-color: #FFFDFA;
+}
+
+footer a {
+  color: #725122;
+  text-decoration: none;
+}
+
+h3,
+h2,
+h1 {
+  color: #725122
+}
+
+h3 {
+  font-size: 1.2em !important;
+}
+
+@media only screen and (max-device-width: 480px) {
+
+  header img {
+    display: block;
+    width: 60%;
+    margin: auto;
+  }
+}
+
+/* Media Query for Tablet Viewport */
+@media screen and (min-width: 550px),
+print {
+
+  .grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 20px;
+  }
+
+
+  header img {
+    display: block;
+    width: 30%;
+    margin: auto;
+    margin-top: 2% !important;
+  }
+
+  /* Tablet Viewport: Show tab-desk class, hide mobile class */
+  .tab-desk {
+    display: block;
+  }
+
+  .mobile {
+    display: none;
+  }
+
+  /* Tablet Viewport: Style rule for header content */
+  span.tab-desk {
+    display: inline;
+  }
+
+  /* Tablet Viewport: Style rules for nav area */
+
+  nav li {
+    border: none;
+    display: inline-block;
+    font-size: 1.5em;
+    /* border-right: 1px solid #e5e9fc; */
+  }
+
+  nav li:last-child {
+    border: none;
+  }
+
+  nav li a {
+    padding: 0.25em 0.5em;
+  }
+
+  /* Tablet Viewport: Style rule for map. */
+
+  .map {
+    width: 500px;
+    height: 450px;
+  }
+
+  aside {
+    grid-column: 1 / span 2;
+  }
+
+}
+
+/* Media Query for Desktop Viewport. */
+
+@media screen and (min-width: 769px),
+print {
+
+  .grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+  }
+
+  /* Desktop Viewport: Style rule for header. */
+
+  header {
+    padding: 2%;
+  }
+
+
+  header img {
+    display: block;
+    width: 15%;
+    margin: auto;
+    margin-top: 2% !important;
+  }
+
+  /* Desktop Viewport: Style rules for nav area. */
+
+  nav li a {
+    padding: 0.5 1.5em;
+  }
+
+  nav li a:hover {
+    color: #725122;
+    background-color: #FFFDFA;
+  }
+
+  /* Desktop Viewport: Style rules for main content.  */
+
+  #info ul {
+    margin-left: 5%;
+  }
+
+  main h3 {
+    font-size: 1.5em;
+  }
+
+  figcaption {
+    font-size: 1em;
+  }
+
+  aside {
+    grid-column: 1 / span 4;
+  }
+
+  #piano,
+  #guitar,
+  #violin {
+    width: 29%;
+    float: left;
+    margin: 0 2%;
+  }
+
+}
+
+@media print {
+  body {
+    background-color: #fff;
+    color: #000;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.banner {
+  width: 100%;
+  background-color: #71881b;
+  color: #fff;
+  text-align: center;
+  padding: 20px 0;
+  font-size: 24px;
+  font-weight: bold;
+}
+
+/* Example styles for product section */
+.product {
+  margin: 20px;
+  padding: 20px;
+  /* border: 1px solid #ccc; */
+  border-radius: 10px;
+  box-shadow: 4px 4px 4px #af782a;
+  border-radius: 40px;
+  border: 2px solid #725122;
+  font-size: 0.9em;
+}
+
+.product img {
+  width: 30%;
+  margin: auto;
+  /* max-width: 200px; */
+  border-radius: 5px;
+  margin-bottom: 10px;
+}
+
+.reasons {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  margin-top: 20px;
+
+
+  p {
+    text-align: left;
+    padding: 10px;
+  }
+}
+
+.reason {
+  flex: 0 1 45%;
+  margin-bottom: 20px;
+  text-align: center;
+  box-shadow: 4px 4px 4px #af782a;
+  border-radius: 40px;
+  border: 2px solid #725122;
+  font-size: 0.9em;
+}
+
+.reason img {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  margin-bottom: 10px;
+  margin: auto;
+}
+
+
+
+
+
+.product-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 50px;
+  padding: 50px;
+}
+
+.product-card {
+  border: 1px solid #725122;
+  border-radius: 8px;
+  padding: 10px;
+  text-align: center;
+  width: 200px;
+}
+
+.product-card img {
+  width: 100%;
+  height: auto;
+}
+
+.product-info {
+  margin-top: 10px;
+}
+
+.product-title {
+  font-size: 18px;
+  margin: 10px 0;
+}
+
+.product-price {
+  font-size: 16px;
+  color: #333;
+}
+
+.add-to-cart,
+.remove-item {
+  background-color: #725122;
+  color: #fff;
+  border: none;
+  padding: 10px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.add-to-cart:hover {
+  background-color: #d28518;
+}
+
+.remove-item:hover {
+  background-color: #d28518;
+}
+
+
+
+#cart-items {
+  margin-left: 30%;
+  padding: 20px;
+  border: 1px solid #725122;
+  border-radius: 8px;
+  padding: 10px;
+  text-align: center;
+  width: 600px;
+}
+
+.cart-item {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 0;
+  border-bottom: 1px solid #725122;
+}
+
+.cart-total {
+  padding: 20px;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+
+#cart-summary {
+  margin-top: 20px;
+  font-weight: bold;
+}

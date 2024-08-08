@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>ShreeGovind Fans</title>
+    <link rel="stylesheet" href="style/style.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+</head>
+
+<body class="centerText">
+    <header>
+        <img src="images/logo-transparent-png.png" id="logo" />
+        <nav>
+            <ul>
+                <li><a href="#home"><i class="fa fa-home" aria-hidden="true"></i> Home </a></li>
+                <li><a href="#products"><i class="fa fa-product-hunt" aria-hidden="true"></i> Products </a></li>
+                <li><a href="#faqs"><i class="fa fa-users" aria-hidden="true"></i> FAQs </a></li>
+                <li><a href="#training"><i class="fa fa-picture-o" aria-hidden="true"></i> Training</a></li>
+                <li><a href="#contact"><i class="fa fa-star" aria-hidden="true"></i> Contact</a></li>
+                <li><a href="#aboutus"><i class="fa fa-users" aria-hidden="true"></i> About us</a></li>
+                <li><a href="#cart" onclick="renderCart()"><i class="fa fa-shopping-cart" aria-hidden="true"></i>Cart
+                        (<span id="cart-count">0</span>)</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="home">
+            <div id="home">
+                <h2>Welcome to ShreeGovind Ceiling Fans – Where Innovation Meets Breeze!</h2>
+                <div id="banner">
+                    <img src="images/home/banner.jpg" alt="Banner Image" style="width: 100%;">
+                </div>
+                <div id="content">
+                    <p>
+                        At ShreeGovind, we take pride in providing cutting-edge ceiling fan solutions that seamlessly
+                        blend
+                        style, efficiency, and innovation. With a commitment to excellence, we have been a trusted name
+                        in
+                        the industry for 3 years, setting the standard for superior performance and unmatched
+                        durability.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <section id="products">
+            <h1>Our Products</h1>
+            <div id="product-list" class="product-list"></div>
+        </section>
+
+        <section id="faqs">
+            <h1 style="margin-top: 10px;">FAQs</h1>
+            <p>Got questions? We've got answers! Explore our frequently asked questions below.</p>
+
+            <section id="faqs">
+                <h3>1. What size ceiling fan do I need for my room?</h3>
+                <p>The size of the ceiling fan depends on the dimensions of your room. As a general guideline, rooms up
+                    to
+                    75 square feet typically require a fan with a blade span of 36 inches or less, while larger rooms
+                    may
+                    require fans with blade spans ranging from 42 to 72 inches.</p>
+            </section>
+            <section id="faqs">
+                <h3>2. How do I choose the right ceiling fan for my space?</h3>
+                <p>Consider factors such as room size, ceiling height, style preferences, and desired features (e.g.,
+                    remote
+                    control, light kit). You can also consult our buying guide or reach out to our customer service team
+                    for
+                    personalized recommendations.</p>
+
+            </section>
+            <section id="faqs">
+                <h3>3. What is the ideal ceiling fan height from the floor?</h3>
+                <p>The ideal height for ceiling fan blades is typically 7 to 9 feet above the floor. For rooms with
+                    higher
+                    ceilings, consider using a downrod to lower the fan to the optimal height for airflow and safety.
+                </p>
+            </section>
+            <section id="faqs">
+                <h3>4. Do ceiling fans save energy?</h3>
+                <p>Yes, ceiling fans can help save energy by providing supplemental cooling and reducing the need for
+                    air
+                    conditioning. Using ceiling fans allows you to set your thermostat higher while maintaining comfort,
+                    which can lead to energy savings</p>
+
+            </section>
+            <section id="faqs">
+                <h3>5. Can I use a ceiling fan outdoors?</h3>
+                <p>Yes, there are ceiling fans specifically designed for outdoor use, such as on covered porches,
+                    patios, or
+                    gazebos. These fans are constructed with weather-resistant materials and are rated for damp or wet
+                    locations.
+                </p>
+            </section>
+        </section>
+
+        <section id="training">
+            <h1>Training</h1>
+            <article>
+                <p>Our training program is designed to provide you with a comprehensive understanding of our ceiling fan
+                    products, their features, benefits, and applications. You will learn about the various types of
+                    ceiling
+                    fans we offer, their design principles, technological innovations, and performance characteristics.
+                    Through hands-on training sessions, product demonstrations, and interactive workshops, you will
+                    become
+                    proficient in showcasing our products effectively to customers and addressing their needs and
+                    inquiries.
+                </p>
+                <div id="training-table">
+                    <table>
+                        <caption>Training Schedule</caption>
+                        <tr><!--Row 1--></tr>
+                        <th>Product</th>
+                        <th>Date</th>
+                        <th>Duration</th>
+                        <th>Instructor</th>
+                        <th>Time</th>
+                        <th>Room</th>
+                        <tr><!--Row 2-->
+                            <td>RadiantLite</td>
+                            <td>03-05-2024</td>
+                            <td>2 Hours</td>
+                            <td>Kishan</td>
+                            <td>6 PM</td>
+                            <td>A</td>
+                        </tr>
+                        <tr><!--Row 3-->
+                            <td>LumiSphere</td>
+                            <td>08-03-2024</td>
+                            <td>2 Hours</td>
+                            <td>Rajiv</td>
+                            <td>6 PM</td>
+                            <td>C</td>
+                        </tr>
+                        <tr><!--Row 4-->
+                            <td>GlowWave</td>
+                            <td>15-01-2024</td>
+                            <td>2 Hours</td>
+                            <td>Karan</td>
+                            <td>4 PM</td>
+                            <td>B</td>
+                        </tr>
+                        <tr><!--Row 5-->
+                            <td>ShineBright</td>
+                            <td>01-01-2024</td>
+                            <td>1 Hour 30 Minutes</td>
+                            <td>Anubhav</td>
+                            <td>5 PM</td>
+                            <td>B</td>
+                        </tr>
+                        <tr><!--Row 6-->
+                            <td>Retrolite</td>
+                            <td>02-01-2024</td>
+                            <td>1 Hour 30 Minutes</td>
+                            <td>Ashok</td>
+                            <td>5 PM</td>
+                            <td>A</td>
+                        </tr>
+                        <tr><!--Row 7-->
+                            <td>BrightRoom</td>
+                            <td>03-01-2024</td>
+                            <td>2 Hours</td>
+                            <td>Shubham</td>
+                            <td>7 PM</td>
+                            <td>C</td>
+                        </tr>
+                        <tr><!--Row 8-->
+                            <td>BulbnBright</td>
+                            <td>05-01-2024</td>
+                            <td>1 Hour 30 Minutes</td>
+                            <td>Parin</td>
+                            <td>6 PM</td>
+                            <td>A</td>
+                        </tr>
+                        <tr><!--Row 9-->
+                            <td>ShineOn</td>
+                            <td>18-11-2024</td>
+                            <td>2 Hours</td>
+                            <td>Kiran</td>
+                            <td>7 PM</td>
+                            <td>A</td>
+                        </tr>
+                        <tr><!--Row 10-->
+                            <td>SunsOut</td>
+                            <td>08-02-2024</td>
+                            <td>2 Hours</td>
+                            <td>Raksha</td>
+                            <td>5 PM</td>
+                            <td>C</td>
+                        </tr>
+                        <tr><!--Row 11-->
+                            <td>LightItUp</td>
+                            <td>19-02-2024</td>
+                            <td>1 Hour 30 Minutes</td>
+                            <td>Dipika</td>
+                            <td>4 PM</td>
+                            <td>B</td>
+                        </tr>
+                        <tr><!--Row 12-->
+                            <td>ForeverBright</td>
+                            <td>01-03-2024</td>
+                            <td>1 Hour 30 Minutes</td>
+                            <td>Ritik</td>
+                            <td>4 PM</td>
+                            <td>A</td>
+                        </tr>
+                    </table>
+                </div>
+            </article>
+        </section>
+
+        <section id="contact">
+            <h2>Contact Us!</h2>
+            <div>
+                <section id="cont_form">
+                    <img src="images/home/banner.jpg" style="width: 100%;height: 550px;">
+                </section>
+                <section id="cont_img">
+                    <form action="/action_page.php">
+                        <label for="fname">First Name</label>
+                        <input type="text" id="fname" name="firstname" placeholder="Your name..">
+
+                        <label for="lname">Last Name</label>
+                        <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+
+                        <label for="country">Country</label>
+                        <select id="country" name="country">
+                            <option value="australia">Australia</option>
+                            <option value="canada">Canada</option>
+                            <option value="usa">USA</option>
+                        </select>
+
+                        <label for="subject">Subject</label>
+                        <textarea id="subject" name="subject" placeholder="Write something.."
+                            style="height:200px"></textarea>
+
+                        <input type="submit" value="Submit">
+                    </form>
+                </section>
+            </div>
+        </section>
+
+        <section id="aboutus">
+            <h2>About Us</h2>
+            <div id="content">
+                <p>
+                    At ShreeGovind, we take pride in providing cutting-edge ceiling fan solutions that seamlessly blend
+                    style, efficiency, and innovation. With a commitment to excellence, we have been a trusted name in
+                    the industry for 3 years, setting the standard for superior performance and unmatched
+                    durability.
+                </p>
+                <p>You can reach out us:</p>
+                <p>Call Us: <i class="fa fa-phone" aria-hidden="true"></i>&nbsp;<a href="tel:2638804054">2638804054</a>
+                </p>
+                <iframe class="map"
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2804.791047886417!2d-75.78744932424776!3d45.33284174219438!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4cce074eb51b0343%3A0x33e6216325d5043e!2s25%20Banner%20Rd%2C%20Ottawa%2C%20ON%20K2H%208T3!5e0!3m2!1sen!2sca!4v1707412561295!5m2!1sen!2sca"
+                    width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+        </section>
+
+        <section id="cart">
+            <h2>Your Cart</h2>
+            <div id="cart-items"></div>
+            <div id="cart-summary">
+                <p id="cart-subtotal">Subtotal: $0.00</p>
+                <p id="cart-tax">Tax: $0.00</p>
+                <p id="cart-total">Total: $0.00</p>
+                
+            </div>
+        </section>
+    </main>
+    <footer>
+        &copy; Copyrights 2024. All rights reserved to <a href="index.html">ShreeGovind Fans</a>
+    </footer>
+    <script src="script/script.js"></script>
+</body>
+
+</html>

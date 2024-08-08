@@ -1,0 +1,32 @@
+[
+    {
+        "id": 1,
+        "name": "Ceiling Fan Model A",
+        "price": 99.99,
+        "image": "images/product/p1.jpg"
+    },
+    {
+        "id": 2,
+        "name": "Ceiling Fan Model B",
+        "price": 129.99,
+        "image": "images/product/p2.jpg"
+    },
+    {
+        "id": 3,
+        "name": "Ceiling Fan Model C",
+        "price": 189.99,
+        "image": "images/product/p3.jpg"
+    },
+    {
+        "id": 4,
+        "name": "Ceiling Fan Model D",
+        "price": 199.99,
+        "image": "images/product/p4.jpg"
+    },
+    {
+        "id": 5,
+        "name": "Ceiling Fan Model E",
+        "price": 250.99,
+        "image": "images/product/p5.jpg"
+    }
+]
